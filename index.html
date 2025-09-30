@@ -107,12 +107,41 @@ tr:hover { background: rgba(255,255,255,0.07); transition: background 0.3s ease;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
 const shifts = [
-  { name:"Danyall Abbasi", rank:"Head Of Hospital", times:[{days:"همه روزها", start:"20:00", end:"23:00"}]},
-  { name:"Abbas Abbasi", rank:"Hospital Assistant", times:[
-      {days:"همه روزها", start:"12:00", end:"14:00"},
-      {days:"همه روزها", start:"16:00", end:"17:00"}
-    ]},
-  { name:"Parsa Rahimi", rank:"Hospital Assistant", times:[{days:"همه روزها", start:"12:00", end:"15:00"}]},
+  {
+    name: "Ali Kamrad",
+    rank: "Medical Director",
+    times: [
+      { days: "همه روزها", start: "15:00", end: "18:00" }
+    ]
+  },
+  {
+    name: "Alireza Ahmadiii",
+    rank: "Hospital Assistant",
+    times: [
+      { days: "همه روزها", start: "21:00", end: "24:00" }
+    ]
+  },
+  {
+    name: "Ali Rafiee",
+    rank: "Hospital Assistant",
+    times: [
+      { days: "همه روزها", start: "24:00", end: "03:00" }
+    ]
+  },
+  {
+    name: "Abolfazl Abbasi",
+    rank: "Hospital Assistant",
+    times: [
+      { days: "همه روزها", start: "11:00", end: "14:00" }
+    ]
+  },
+  {
+    name: "Behrad Davarpanah",
+    rank: "Hospital Assistant",
+    times: [
+      { days: "همه روزها", start: "19:00", end: "22:00" }
+    ]
+  }
 ];
 
 const rankOrder = {"Head Of Hospital":1,"Medical Director":2,"Hospital Assistant":3,"Professor":4};
