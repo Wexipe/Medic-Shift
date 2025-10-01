@@ -101,61 +101,23 @@ tr:hover { background: rgba(255,255,255,0.07); transition: background 0.3s ease;
     </div>
   </div>
 </div>
-<div id="noteSaved">نوت ذخیره شد</div>
+<div id="noteSaved">! نوت ذخیره شد</div>
 
 <audio id="notifSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
 const shifts = [
-  {
-    name: "Ali Kamrad",
-    rank: "Head Of Hospital",
-    times: [
-      { days: "همه روزها", start: "15:00", end: "18:00" }
-    ]
-  },
-  {
-    name: "Alireza Ahmadiii",
-    rank: "Hospital Assistant",
-    times: [
-      { days: "همه روزها", start: "19:00", end: "22:00" }
-    ]
-  },
-  {
-    name: "Ali Rafiee",
-    rank: "Hospital Assistant",
-    times: [
-      { days: "همه روزها", start: "24:00", end: "03:00" }
-    ]
-  },
-  {
-    name: "Abolfazl Abbasi",
-    rank: "Hospital Assistant",
-    times: [
-      { days: "همه روزها", start: "11:00", end: "14:00" }
-    ]
-  },
-  {
-      name: "Behrad Davarpanah",
-    rank: "Hospital Assistant",
-    times: [
-      { days: "همه روزها", start: "19:00", end: "22:00" }
-    ]
-  },
-  {
-        name: "Vandad Sharafi",
-    rank: "Professor",
-    times: [
-      { days: "همه روزها", start: "16:00", end: "17:00" }
-    ]
-  },
-  {
-    name: "Vandad Sharafi",
-    rank: "Professor",
-    times: [
-      { days: "همه روزها", start: "19:00", end: "21:00" }
-    ]
-  }
+  { name: "Ali Kamrad", rank: "Head Of Hospital", times: [{ start: "15:00", end: "18:00" }] },
+  { name: "Alireza Ahmadiii", rank: "Hospital Assistant", times: [{ start: "19:00", end: "22:00" }] },
+  { name: "Ali Rafiee", rank: "Hospital Assistant", times: [{ start: "24:00", end: "03:00" }] },
+  { name: "Abolfazl Abbasi", rank: "Hospital Assistant", times: [{ start: "11:00", end: "14:00" }] },
+  { name: "Behrad Davarpanah", rank: "Hospital Assistant", times: [{ start: "19:00", end: "22:00" }] },
+  { name: "Vandad Sharafi", rank: "Professor", times: [{ start: "16:00", end: "17:00" }, { start: "19:00", end: "21:00" }] },
+  { name: "AmirHossein Saharii", rank: "Professor", times: [{ start: "15:00", end: "18:00" }] },
+  { name: "Theo Williams", rank: "Professor", times: [{ start: "21:00", end: "24:00" }] },
+  { name: "Bruce Storm", rank: "Professor", times: [{ start: "21:00", end: "24:00" }] },
+  { name: "Mohammad Mansoori", rank: "Professor", times: [{ start: "21:00", end: "24:00" }] },
+
 ];
 
 const rankOrder = {"Head Of Hospital":1,"Medical Director":2,"Hospital Assistant":3,"Professor":4};
