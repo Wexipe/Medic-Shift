@@ -148,11 +148,15 @@
     
       const shifts = [
   {
-    "name": "Ata Yazdanian",
-    "rank": "Head Of Hospital",
+    "name": "Mohammad",
+    "rank": "Professor",
     "times": [
       {
-        "days": "H",
+        "days": [
+          0,
+          1,
+          2
+        ],
         "start": "21:00",
         "end": "00:00"
       }
@@ -290,9 +294,7 @@
       }
     ]
   }
-]
-
-    const rankOrder = {"Head Of Hospital":1,"Medical Director":2,"Hospital Assistant":3,"Professor":4};
+]const rankOrder = {"Head Of Hospital":1,"Medical Director":2,"Hospital Assistant":3,"Professor":4};
     function $(s){return document.querySelector(s);}    
     function toPersianDigits(input){return String(input).replace(/\d/g,d=>"۰۱۲۳۴۵۶۷۸۹"[d]);}
     function renderTags(tags){return tags?tags.map(t=>`<span class="tag ${t}">[ ${t} ]</span>`).join(" "):"";}
